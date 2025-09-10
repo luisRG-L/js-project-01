@@ -2,7 +2,7 @@ const a = document.getElementById("a");
 const b = document.getElementById("b");
 const result = document.getElementById("result");
 
-const modal = document.getElementById("modal");
+const modal = document.getElementsByClassName("modal-container")[0];
 
 let count = 0;
 
