@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>JS project 3</title>
+		<link href="../style/style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<header>
+			<nav></nav>
+			<h1>Dynamic list</h1>
+		</header>
+		<main id="root">
+			<div class="content">
+				<div class="form">
+					<div class="formgroup">
+						<label for="element-name">Element Name:</label>
+						<input
+							type="text"
+							id="name"
+							placeholder="Fruits"
+							name="element-name"
+						/>
+					</div>
+					<button class="add">Add</button>
+					<p class="err"></p>
+				</div>
+				<ul id="list"></ul>
+			</div>
+			<div class="explain">
+				<p>This projects is a webpage that haves a button, when you click on it, a new element will be added to the list.</p>
+				<p>This project uses: </p>
+				<ul>
+					<li>DOM element getting</li>
+					<li>Managing click events</li>
+					<li>DOM element manipulation</li>
+				</ul>
+
+				<p>And API functions:</p>
+				<ul>
+					<li>document.getElementById()</li>
+					<li>document.addEventListener()</li>
+					<li>Element.innerHTML</li>
+			</div>
+		</main>
+		<footer></footer>
+
+		<script type="module" src="../scripts/main.js"></script>
+		<script type="module" src="./main.js"></script>
+	</body>
+</html>

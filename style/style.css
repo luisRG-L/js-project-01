@@ -1,0 +1,68 @@
+@import url("https://cdn.jsdelivr.net/npm/water.css@2/out/light.css");
+
+ * {
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	padding: 0;
+	margin: auto;
+}
+
+/*obody > footer {
+	background-color: black;
+	color: white;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+*/
+
+footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 1em;
+	padding: 1em;
+}
+
+.grid > article {
+	background-color: white;
+	border-radius: 1em;
+	box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+	padding: 1em;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
+/*
+button {
+	cursor: pointer;
+	border: none;
+	color: black;
+	font-size: 1em;
+	font-weight: bold;
+	padding: 1em 1.5em;
+	border-radius: 0.5em;
+} */
+
+#modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	z-index: 10;
+	background: rgba(0, 0, 0, 0.5);
+}
