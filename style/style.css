@@ -1,6 +1,6 @@
 @import url("https://cdn.jsdelivr.net/npm/water.css@2/out/light.css");
 
- * {
+* {
 	box-sizing: border-box;
 }
 
@@ -65,4 +65,9 @@ button {
 	flex-direction: column;
 	z-index: 10;
 	background: rgba(0, 0, 0, 0.5);
+}
+
+#modal .m-container {
+	background: white;
+	padding: 1rem;
 }

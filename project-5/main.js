@@ -24,28 +24,9 @@ function calculate(operation) {
 			result.innerHTML = an * bn;
 			break;
 		case "/":
-			if (bn === 0 && count < 5) {
+			if (bn === 0) {
 				result.innerHTML = "You can't divide by zero";
 				count++;
-				if (count === 5) {
-					modal.innerHTML =
-						'<p>Ok, I will divide you better</p> <button id="close">Ok</button>';
-					modal.style.display = "flex";
-					document
-						.getElementById("close")
-						.addEventListener("click", () => {
-							modal.style.display = "none";
-						});
-				} else if (count === 3) {
-					modal.innerHTML =
-						'<p>Please, don\'t divide by zero</p> <button id="close">Ok</button>';
-					modal.style.display = "flex";
-					document
-						.getElementById("close")
-						.addEventListener("click", () => {
-							modal.style.display = "none";
-						});
-				} 
 				return;
 			}
 			result.innerHTML = an / bn;
@@ -55,23 +36,22 @@ function calculate(operation) {
 	}
 }
 
-
 const plus = document.getElementById("plus");
 plus.addEventListener("click", () => {
-	calculate('+');
+	calculate("+");
 });
 
 const minus = document.getElementById("minus");
 minus.addEventListener("click", () => {
-	calculate('-');
+	calculate("-");
 });
 
 const multiply = document.getElementById("multiply");
 multiply.addEventListener("click", () => {
-	calculate('*');
+	calculate("*");
 });
 
 const divide = document.getElementById("divide");
 divide.addEventListener("click", () => {
-	calculate('/');
+	calculate("/");
 });
