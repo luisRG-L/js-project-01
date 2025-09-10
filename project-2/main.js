@@ -1,4 +1,4 @@
-const modal = document.getElementsByClassName("modal-container")[0];
+const modal = document.getElementsByClassName("m-container")[0];
 
 let count = 0;
 
