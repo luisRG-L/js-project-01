@@ -1,4 +1,4 @@
-const modal = document.getElementById('modal');
+const modal = document.getElementsByClassName("modal-container")[0];
 
 let count = 0;
 
@@ -7,7 +7,7 @@ function generateColor() {
 	const G = Math.floor(Math.random() * 256);
 	const B = Math.floor(Math.random() * 256);
 	const middle = Math.floor((R + G + B) / 3);
-	return [`rgb(${R}, ${G}, ${B})`, middle > 128 ? 'black' : 'white'];
+	return [`rgb(${R}, ${G}, ${B})`, middle > 128 ? "black" : "white"];
 }
 
 function changeColor() {
@@ -18,17 +18,17 @@ function changeColor() {
 	if (count === 10) {
 		modal.innerHTML =
 			'<p>I saw a chameleon!</p> <button id="close">Ok</button> <button id="want">I want to be a chameleon</button>';
-		modal.style.display = 'flex';
-		document.getElementById('close').addEventListener('click', () => {
-			modal.style.display = 'none';
+		modal.style.display = "flex";
+		document.getElementById("close").addEventListener("click", () => {
+			modal.style.display = "none";
 		});
-		document.getElementById('want').addEventListener('click', () => {
-			modal.style.display = 'none';
+		document.getElementById("want").addEventListener("click", () => {
+			modal.style.display = "none";
 			setInterval(() => {
 				changeColor();
 			}, 1000);
 		});
 	}
 }
-const button = document.getElementById('change-color');
-button.addEventListener('click', changeColor);
+const button = document.getElementById("change-color");
+button.addEventListener("click", changeColor);
