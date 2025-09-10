@@ -2,8 +2,6 @@ const a = document.getElementById("a");
 const b = document.getElementById("b");
 const result = document.getElementById("result");
 
-const modal = document.getElementsByClassName("m-container")[0];
-
 let count = 0;
 
 function calculate(operation) {

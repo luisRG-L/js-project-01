@@ -1,4 +1,5 @@
-const modal = document.getElementsByClassName("m-container")[0];
+const modal = document.querySelector("#modal");
+const modal_container = document.querySelector(".m-container");
 
 let count = 0;
 
@@ -16,7 +17,7 @@ function changeColor() {
 	document.body.style.color = color[1];
 	count++;
 	if (count === 10) {
-		modal.innerHTML =
+		modal_container.innerHTML =
 			'<p>I saw a chameleon!</p> <button id="close">Ok</button> <button id="want">I want to be a chameleon</button>';
 		modal.style.display = "flex";
 		document.getElementById("close").addEventListener("click", () => {

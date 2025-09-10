@@ -12,13 +12,34 @@
 			<h1>Task List with Local Storage</h1>
 		</header>
 		<main id="root">
-			<div class="form">
-				<input type="text" id="name" />
-				<button class="add">Add</button>
-				<p class="err"></p>
+			<div class="content">
+				<div class="form">
+					<input type="text" id="name" />
+					<button class="add">Add</button>
+					<p class="err"></p>
+				</div>
+				<ul id="list"></ul>
+				<button id="delete-completed">Delete completed</button>
 			</div>
-			<ul id="list"></ul>
-			<button id="delete-completed">Delete completed</button>
+			<div class="explain">
+				<p>
+					This projects is a webpage that haves a text input, when
+					you type a part of the month, the list will filter.
+				</p>
+				<p>This project uses:</p>
+				<ul>
+					<li>DOM element getting</li>
+					<li>Managing click events</li>
+					<li>DOM element manipulation</li>
+					<li>Local storage</li>
+				</ul>
+
+				<p>And API functions:</p>
+				<ul>
+					<li>document.getElementById()</li>
+					<li>document.addEventListener()</li>
+					<li>Element.innerHTML</li>
+				</ul>
 		</main>
 		<footer></footer>
 

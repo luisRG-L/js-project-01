@@ -1,19 +1,21 @@
-const modal = document.getElementsByClassName("m-container")[0];
+const modal = document.querySelector("#modal");
+const modal_container = document.querySelector(".m-container");
 
 let count = 0;
 
 function update() {
 	document.getElementById("counter").innerHTML = count;
 	if (count > 1000) {
-		modal.innerHTML =
+		modal_container.innerHTML =
 			'<p>Wait... You are a hacker...</p> <button id="close">Ok</button>';
 	} else if (count === 500) {
-		modal.innerHTML = '<p>Are you sure?</p> <button id="close">Ok</button>';
+		modal_container.innerHTML =
+			'<p>Are you sure?</p> <button id="close">Ok</button>';
 	} else if (count === 200) {
-		modal.innerHTML =
+		modal_container.innerHTML =
 			'<p>Are you a robot?</p> <button id="close">Ok</button>';
 	} else if (count === 100) {
-		modal.innerHTML =
+		modal_container.innerHTML =
 			'<p>You clicked a lot</p> <button id="close">Ok</button>';
 	}
 	if (count === 100 || count === 200 || count === 500 || count === 1000) {
